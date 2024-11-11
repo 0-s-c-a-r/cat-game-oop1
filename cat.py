@@ -22,6 +22,7 @@ class Cat:
         self.energy += 10
         self.weight += .1
         self.age += .1
+
     def play(self):
         print(f"{self.name} is playing...")
         self.energy += -10
@@ -29,7 +30,15 @@ class Cat:
         self.age += .1
 
     def sleep(self):
-        print(f"{self.name} is slepping...")
+        print(f"{self.name} is sleeping...")
         self.energy += 10
         self.intelligence +=-10
         self.age += .1
+    
+    def stats(self):
+        print(f"""these are {self.name}'s stats
+    Age: {self.age}
+    Energy: {self.energy}
+    Intelligence: {self.intelligence}
+    Weight: {self.weight}
+""")
